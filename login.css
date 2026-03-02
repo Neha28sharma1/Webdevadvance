@@ -1,0 +1,117 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+  }
+  
+  /* SPLIT LAYOUT */
+  .split {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* LEFT SIDE */
+  .form-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 40px;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+  
+  input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .primary-btn {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to right, #156079);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .google-btn {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .google-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  .forgot-pass1 {
+    color: #156079;
+  }
+  
+  .signup-text {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .signup-text a {
+    color: #156079;
+    text-decoration: none;
+  }
+  
+  /* RIGHT SIDE IMAGE */
+  .image-side {
+    flex: 1;
+    background-image: url("images/jonkoping-lake.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
