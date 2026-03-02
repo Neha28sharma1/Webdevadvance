@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-dark: #17181b;
+  --surface: #f7f7f7;
+  --text-main: #171b22;
+  --text-soft: #5a6370;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-main);
+}
+
+.page-shell {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+}
+
+.page-card {
+  /* max-width: 1040px; */
+  margin: 0 auto;
+  background: var(--surface);
+}
+
+.hero {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 14, 34, 0.3) 0%,
+    rgba(8, 22, 45, 0.66) 100%
+  );
+}
+
+.hero-curve {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-curve path {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.95);
+  stroke-width: 12;
+  stroke-linecap: round;
+}
+
+.top-nav {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 34px;
+  color: var(--white);
+  font-size: 12px;
+}
+
+.left-links,
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-links a,
+.brand {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.pill {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  font-size: 11px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 520px;
+  margin-left: 34px;
+  margin-top: 76px;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-size: 66px;
+  line-height: 0.95;
+  letter-spacing: -1.2px;
+  margin-bottom: 18px;
+}
+
+.hero-content p {
+  max-width: 420px;
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.subscribe {
+  margin-top: 30px;
+  border: none;
+  border-radius: 999px;
+  background: #f2c150;
+  color: #1f1f1f;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content {
+  padding: 46px 42px 58px;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.35fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.mini-copy {
+  font-size: 10px;
+  color: var(--text-soft);
+  line-height: 1.45;
+  margin-top: 8px;
+}
+
+.intro h2 {
+  font-size: 52px;
+  letter-spacing: -0.9px;
+  line-height: 1.03;
+  font-weight: 700;
+}
+
+.intro-text {
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin-top: 7px;
+}
+
+.gallery {
+  margin-top: 48px;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  justify-content: center;
+}
+
+.gallery {
+  margin-top: 48px;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  align-items: end;
+}
+
+.thumb {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.12);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Controlled height variations */
+.thumb-1 {
+  height: 150px;
+}
+.thumb-2 {
+  height: 195px;
+}
+.thumb-3 {
+  height: 120px;
+}
+.thumb-4 {
+  height: 160px;
+}
+.thumb-5 {
+  height: 210px;
+}
+.thumb-6 {
+  height: 140px;
+}
+
+@media (max-width: 960px) {
+  .page-shell {
+    padding: 12px;
+  }
+
+  .top-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .brand {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .right-actions {
+    margin-left: auto;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+
+  .content {
+    padding: 30px 20px 40px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .intro h2 {
+    font-size: 36px;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    align-items: stretch;
+  }
+
+  .thumb {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .thumb-1 {
+    grid-column: span 1;
+  }
+  .thumb-2 {
+    grid-column: span 1;
+  }
+  .thumb-3 {
+    grid-column: span 1;
+  }
+  .thumb-4 {
+    grid-column: span 1;
+  }
+  .thumb-5 {
+    grid-column: span 1;
+  }
+  .thumb-6 {
+    grid-column: span 1;
+  }
+}
