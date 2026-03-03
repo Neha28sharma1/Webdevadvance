@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const websiteHTML = store.url
         ? `<div class="info-row">
            <i class="fa-solid fa-link"></i>
-           <a href="https://${store.url}" target="_blank" style="color: inherit; text-decoration: underline;">웹사이트 방문</a>
+           <a href="https://${store.url}" target="_blank" style="color: inherit; text-decoration: underline;">Visit the website</a>
          </div>`
         : "";
 
