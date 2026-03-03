@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <script src="venue-page.js"></script>
+    <script src="venue-page.js" defer></script>
   </head>
   <body>
     <nav class="top-nav">
@@ -35,96 +35,26 @@
         </p>
       </div>
 
-      <nav class="filter-nav">
-        <button class="filter-btn active">
-          <i class="fa-solid fa-border-all"></i> All (9)
+      <nav class="filter-nav" id="filter-nav">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> All <span class="count">()</span>
         </button>
-        <button class="filter-btn">
-          <i class="fa-solid fa-utensils"></i> Restaurants (3)
+        <button class="filter-btn" data-filter="Öster">
+          Öster <span class="count">()</span>
         </button>
-        <button class="filter-btn">
-          <i class="fa-solid fa-building"></i> Venues (3)
+        <button class="filter-btn" data-filter="Väster">
+          Väster <span class="count">()</span>
         </button>
-        <button class="filter-btn">
-          <i class="fa-solid fa-bag-shopping"></i> Shops (3)
+        <button class="filter-btn" data-filter="Atollen">
+          Atollen <span class="count">()</span>
+        </button>
+        <button class="filter-btn" data-filter="Tändsticksområdet">
+          Tändsticksområdet <span class="count">()</span>
         </button>
       </nav>
 
-      <div class="card-grid">
-        <div class="venue-card">
-          <div
-            class="card-image"
-            style="
-              background-image: url(&quot;images/restaurant-view.jpg&quot;);
-            "
-          >
-            <span class="badge category">Restaurant</span>
-            <span class="badge rating"
-              ><i class="fa-solid fa-star"></i> 4.7</span
-            >
-          </div>
-
-          <div class="card-content">
-            <div class="card-header">
-              <h3>Hamnkrogen</h3>
-              <span class="price-level">kr</span>
-            </div>
-            <p class="description">
-              Classic Swedish cuisine with a modern twist, located right by the
-              waterfront. Enjoy fresh seafood and seasonal...
-            </p>
-
-            <div class="info-row">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Hamnvägen 12, Jönköping</span>
-            </div>
-            <div class="info-row">
-              <i class="fa-regular fa-clock"></i>
-              <span>Mon–Sat 11:00–22:00, Sun 12:00–20:00</span>
-            </div>
-
-            <div class="tags">
-              <span class="tag">Swedish</span>
-              <span class="tag">Seafood</span>
-              <span class="tag">Waterfront</span>
-            </div>
-          </div>
+      <div class="card-grid" id="card-grid">
         </div>
-        <div class="venue-card">
-          <div
-            class="card-image"
-            style="
-              background-image: url(&quot;images/restaurant-view.jpg&quot;);
-            "
-          >
-            <span class="badge category">Restaurant</span>
-            <span class="badge rating"
-              ><i class="fa-solid fa-star"></i> 4.7</span
-            >
-          </div>
-          <div class="card-content">
-            <div class="card-header">
-              <h3>Hamnkrogen</h3>
-              <span class="price-level">krkr</span>
-            </div>
-            <p class="description">
-              Classic Swedish cuisine with a modern twist, located right by the
-              waterfront...
-            </p>
-            <div class="info-row">
-              <i class="fa-solid fa-location-dot"></i
-              ><span>Hamnvägen 12, Jönköping</span>
-            </div>
-            <div class="info-row">
-              <i class="fa-regular fa-clock"></i
-              ><span>Mon–Sat 11:00–22:00</span>
-            </div>
-            <div class="tags">
-              <span class="tag">Swedish</span><span class="tag">Seafood</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
   </body>
 </html>
