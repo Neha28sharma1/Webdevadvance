@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Jönköping</title>
+    <link rel="stylesheet" href="venue-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="venue-page.js" defer></script>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="left-links">
+        <a href="#">menu 1</a>
+        <a href="#">menu 2</a>
+        <a href="#">menu 2</a>
+      </div>
+
+      <a href="#" class="brand">jkpgcity</a>
+
+      <div class="right-actions">
+        <button type="button" class="pill">Log In/ Register</button>
+      </div>
+    </nav>
+
+    <section class="explore-section">
+      <div class="header-container">
+        <h1>Districts in Jönköping City</h1>
+        <p class="subtitle">
+          Our city center consist of several districts. East Town, West Town,
+          Spira, Match Town,<br />the City Park, Jönköping Grand Station,
+          Jönköping University and the Atoll. <br />Discover our districts
+          below!
+        </p>
+      </div>
+
+      <nav class="filter-nav" id="filter-nav">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-border-all"></i> All
+          <span class="count">()</span>
+        </button>
+        <button class="filter-btn" data-filter="Öster">
+          Öster <span class="count">()</span>
+        </button>
+        <button class="filter-btn" data-filter="Väster">
+          Väster <span class="count">()</span>
+        </button>
+        <button class="filter-btn" data-filter="Atollen">
+          Atollen <span class="count">()</span>
+        </button>
+        <button class="filter-btn" data-filter="Tändsticksområdet">
+          Tändsticksområdet <span class="count">()</span>
+        </button>
+      </nav>
+
+      <div class="card-grid" id="card-grid"></div>
+    </section>
+  </body>
+</html>

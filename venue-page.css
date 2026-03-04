@@ -1,0 +1,255 @@
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --bg-dark: #17181b;
+  --surface: #f7f7f7;
+  --text-main: #171b22;
+  --text-soft: #5a6370;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #ffffff;
+  color: var(--text-main);
+}
+
+/* HEADER */
+.header-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-container h1 {
+  font-family: "Georgia", serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.header-container .subtitle {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* FILTER NAVIGATION */
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: white;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #156079;
+  color: white;
+  border-color: #156079;
+}
+
+/* CARD GRID */
+.card-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* VENUE CARD */
+.venue-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* CARD IMAGE SECTION */
+.card-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 15px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge.category {
+  background-color: #156079;
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.badge.rating {
+  background-color: white;
+  color: #333;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge.rating i {
+  color: #ffcc00;
+}
+
+/* CARD CONTENT SECTION */
+.card-content {
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  color: #111;
+}
+
+.price-level {
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.info-row i {
+  color: #156079;
+  width: 14px;
+}
+
+/* TAGS */
+.tags {
+  margin-top: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #f0f4f5;
+  color: #555;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-nav {
+    flex-wrap: wrap;
+  }
+}
+
+/* NAV BAR STYLING */
+.top-nav {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 34px;
+  color: var(--text-main);
+  font-size: 12px;
+}
+
+.left-links,
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-links a,
+.brand {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.pill {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-main);
+  font-size: 11px;
+  padding: 7px 14px;
+  cursor: pointer;
+}
+
+/* Navigation Responsive Styles */
+@media (max-width: 960px) {
+  .top-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  .brand {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .right-actions {
+    margin-left: auto;
+  }
+}
