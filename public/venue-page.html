@@ -9,23 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <script src="navbar.js" defer></script>
     <script src="venue-page.js" defer></script>
   </head>
+
   <body>
-    <nav class="top-nav">
-      <div class="left-links">
-        <a href="#">menu 1</a>
-        <a href="#">menu 2</a>
-        <a href="#">menu 2</a>
-      </div>
-
-      <a href="#" class="brand">jkpgcity</a>
-
-      <div class="right-actions">
-        <button type="button" class="pill">Log In/ Register</button>
-      </div>
-    </nav>
-
+    <div id="navbar-placeholder"></div>
     <section class="explore-section">
       <div class="header-container">
         <h1>Districts in Jönköping City</h1>
@@ -60,20 +49,19 @@
 
       <form id="addVenueForm" class="venue-form">
         <input type="text" id="name" placeholder="Venue Name" required />
-
         <input type="text" id="url" placeholder="Website URL" />
-
         <select id="district">
           <option value="Öster">Öster</option>
           <option value="Väster">Väster</option>
           <option value="Atollen">Atollen</option>
           <option value="Tändsticksområdet">Tändsticksområdet</option>
         </select>
-
         <button type="submit">Add Venue</button>
       </form>
 
       <div class="card-grid" id="card-grid"></div>
     </section>
+
+    <div id="footer-placeholder"></div>
   </body>
 </html>
