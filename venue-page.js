@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const cardGrid = document.querySelector(".card-grid");
 
-  // Bring in the data from stores.json
-  fetch("stores.json")
+  // Fetch the stores data from the API and initialize the page with the data
+  fetch("http://localhost:3000/api/venues")
     .then((response) => {
       if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
