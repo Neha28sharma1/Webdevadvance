@@ -6,7 +6,7 @@ const client = new Client({
   host: "localhost",
   port: 5432,
   user: "postgres",
-  password: "dasha",
+  password: "Neha",
   database: "postgres",
 });
 
@@ -61,8 +61,37 @@ async function getAllVenues() {
   }
 }
 
+/////////////functions to add, delete and update venues in the database/////////
+
+//to add a new venue to the database from frontend form
+async function addVenue(name, url, district) {
+  const res = await client.query(
+    "INSERT INTO venues (name, url, district) VALUES ($1,$2,$3) RETURNING *",
+    [name, url, district],
+  );
+
+  return res.rows[0];
+}
+
+//to delete a venue from the database using the delete button on the frontend
+async function deleteVenue(id) {
+  await client.query("DELETE FROM venues WHERE id = $1", [id]);
+}
+
+//to update a venue in the database using the edit button on the frontend
+async function updateVenue(id, name, url, district) {
+  const res = await client.query(
+    "UPDATE venues SET name = $1, url = $2, district = $3 WHERE id = $4 RETURNING *",
+    [name, url, district, id],
+  );
+  return res.rows[0];
+}
+
 // Export functions for use in server.js
 module.exports = {
   setupDatabase,
   getAllVenues,
+  addVenue,
+  deleteVenue,
+  updateVenue,
 };

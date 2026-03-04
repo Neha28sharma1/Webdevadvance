@@ -1,6 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const cardGrid = document.querySelector(".card-grid");
+  const form = document.getElementById("addVenueForm");
+
+  ///function to add a new venue to the database from the form on the frontend
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const venue = {
+      name: document.getElementById("name").value,
+      url: document.getElementById("url").value,
+      district: document.getElementById("district").value,
+    };
+
+    await fetch("http://localhost:3000/api/venues", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(venue),
+    });
+
+    location.reload();
+  });
 
   // Fetch the stores data from the API and initialize the page with the data
   fetch("http://localhost:3000/api/venues")
@@ -31,26 +54,38 @@ document.addEventListener("DOMContentLoaded", () => {
            <a href="https://${store.url}" target="_blank" style="color: inherit; text-decoration: underline;">Visit the website</a>
          </div>`
         : "";
-
+      ///  card HTML structure with dynamic data and event handlers for edit and delete buttons
       const cardHTML = `
-      <div class="venue-card" data-category="${districtName}">
-        <div class="card-image" style="background-image: url('${cardImageUrl}');">
-          <span class="badge category">${districtName}</span>
-        </div>
+<div class="venue-card" data-category="${districtName}">
+  <div class="card-image" style="background-image: url('${cardImageUrl}');">
+    <span class="badge category">${districtName}</span>
+  </div>
 
-        <div class="card-content">
-          <div class="card-header">
-            <h3>${store.name}</h3>
-          </div>
-          
-          <div class="info-row">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>${districtName === "Other" ? "Jönköping" : districtName + ", Jönköping"}</span>
-          </div>
-          ${websiteHTML}
-        </div>
-      </div>
-    `;
+  <div class="card-content">
+    <div class="card-header">
+      <h3>${store.name}</h3>
+    </div>
+
+    <div class="info-row">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>${districtName === "Other" ? "Jönköping" : districtName + ", Jönköping"}</span>
+    </div>
+
+    ${websiteHTML}
+
+    <div class="card-actions">
+      <button onclick="editVenue(${store.id}, '${store.name}', '${store.url}', '${store.district}')">
+        Edit
+      </button>
+
+      <button onclick="deleteVenue(${store.id})">
+        Delete
+      </button>
+    </div>
+
+  </div>
+</div>
+`;
 
       cardGrid.innerHTML += cardHTML;
     });
@@ -123,3 +158,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/// function to delete the selected card
+async function deleteVenue(id) {
+  await fetch(`http://localhost:3000/api/venues/${id}`, {
+    method: "DELETE",
+  });
+
+  location.reload();
+}
+
+// function to edit a venue in the database from the edit button on the frontend
+async function editVenue(id, name, url, district) {
+  const newName = prompt("Edit venue name:", name);
+  const newUrl = prompt("Edit website:", url);
+  const newDistrict = prompt("Edit district:", district);
+
+  if (!newName) return;
+
+  await fetch(`http://localhost:3000/api/venues/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      name: newName,
+      url: newUrl,
+      district: newDistrict,
+    }),
+  });
+
+  location.reload();
+}

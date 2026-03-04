@@ -56,6 +56,23 @@
         </button>
       </nav>
 
+      <h2>Add a Venue</h2>
+
+      <form id="addVenueForm" class="venue-form">
+        <input type="text" id="name" placeholder="Venue Name" required />
+
+        <input type="text" id="url" placeholder="Website URL" />
+
+        <select id="district">
+          <option value="Öster">Öster</option>
+          <option value="Väster">Väster</option>
+          <option value="Atollen">Atollen</option>
+          <option value="Tändsticksområdet">Tändsticksområdet</option>
+        </select>
+
+        <button type="submit">Add Venue</button>
+      </form>
+
       <div class="card-grid" id="card-grid"></div>
     </section>
   </body>
