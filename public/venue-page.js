@@ -1,3 +1,5 @@
+let loggedIn = false;
+
 document.addEventListener("DOMContentLoaded", () => {
   const filterBtns = document.querySelectorAll(".filter-btn");
   const cardGrid = document.querySelector(".card-grid");
@@ -73,15 +75,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ${websiteHTML}
 
-    <div class="card-actions">
-      <button onclick="editVenue(${store.id}, '${store.name}', '${store.url}', '${store.district}')">
-        Edit
-      </button>
+    ${
+      /// if user is logged in, show the edit and delete buttons, otherwise do not show the buttons
+      loggedIn
+        ? `
+<div class="card-actions">
+  <button onclick="editVenue(${store.id}, '${store.name}', '${store.url}', '${store.district}')">
+    Edit
+  </button>
 
-      <button onclick="deleteVenue(${store.id})">
-        Delete
-      </button>
-    </div>
+  <button onclick="deleteVenue(${store.id})">
+    Delete
+  </button>
+</div>
+`
+        : ``
+    }
 
   </div>
 </div>
@@ -190,3 +199,19 @@ async function editVenue(id, name, url, district) {
 
   location.reload();
 }
+
+//function to hide the add venue form if the user is not logged in and show the form if the user is logged in
+
+fetch("/api/auth")
+  .then((res) => res.json())
+  .then((data) => {
+    loggedIn = data.loggedIn;
+
+    if (!loggedIn) {
+      const form = document.getElementById("addVenueForm");
+
+      if (form) {
+        form.style.display = "none";
+      }
+    }
+  });

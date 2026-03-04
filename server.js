@@ -4,6 +4,15 @@ const model = require("./model.js"); // Call the model.js file
 const app = express();
 const port = 3000;
 
+//cookies management
+const cookieParser = require("cookie-parser");
+const crypto = require("crypto");
+
+const SECRET = "mySecretCookieToken";
+const sessions = {};
+
+app.use(cookieParser(SECRET));
+
 // Middleware setup
 app.use(cors());
 app.use(express.json());
@@ -22,10 +31,66 @@ app.get("/api/venues", async (req, res) => {
   }
 });
 
+//function to check if the user is logged in by checking the presence of the authToken cookie
+
+function checkAuth(req, res, next) {
+  const token = req.signedCookies.authToken;
+
+  if (token && sessions[token]) {
+    next();
+  } else {
+    res.status(403).send("Login required");
+  }
+}
+
+app.get("/api/auth", (req, res) => {
+  const token = req.signedCookies.authToken;
+
+  if (token && sessions[token]) {
+    res.json({ loggedIn: true });
+  } else {
+    res.json({ loggedIn: false });
+  }
+});
+
+///route to handle user login and create a session cookie
+
+app.post("/login", express.urlencoded({ extended: true }), (req, res) => {
+  const { username, password } = req.body;
+
+  if (username === "admin" && password === "password") {
+    const token = crypto.randomBytes(64).toString("hex");
+
+    sessions[token] = { username };
+
+    res.cookie("authToken", token, {
+      signed: true,
+      httpOnly: true,
+    });
+
+    res.redirect("/");
+  } else {
+    res.status(401).send("Invalid login");
+  }
+});
+
+//route to handle user logout and clear the session cookie
+app.get("/logout", (req, res) => {
+  const token = req.signedCookies.authToken;
+
+  if (token) {
+    delete sessions[token];
+  }
+
+  res.clearCookie("authToken");
+
+  res.redirect("/");
+});
+
 ////////Backend routes to delete, add, and update data from frontend///////
 
-//to add a new venue to the database from frontend form
-app.post("/api/venues", async (req, res) => {
+//to add a new venue to the database from frontend form and check auth as well before allowing the user to add a new venue
+app.post("/api/venues", checkAuth, async (req, res) => {
   const { name, url, district } = req.body;
   try {
     await model.addVenue(name, url, district);
@@ -35,8 +100,8 @@ app.post("/api/venues", async (req, res) => {
   }
 });
 
-//to delete a venue from the database using the delete button on the frontend
-app.delete("/api/venues/:id", async (req, res) => {
+//to delete a venue from the database using the delete button on the frontend and check auth as well before allowing the user to delete a venue
+app.delete("/api/venues/:id", checkAuth, async (req, res) => {
   const venueId = req.params.id;
   try {
     await model.deleteVenue(venueId);
@@ -46,8 +111,8 @@ app.delete("/api/venues/:id", async (req, res) => {
   }
 });
 
-//to update a venue in the database using the edit button on the frontend
-app.put("/api/venues/:id", async (req, res) => {
+//to update a venue in the database using the edit button on the frontend and check auth as well before allowing the user to update a venue
+app.put("/api/venues/:id", checkAuth, async (req, res) => {
   const venueId = req.params.id;
   const { name, url, district } = req.body;
   try {

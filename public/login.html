@@ -1,64 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="login.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="split">
+      <!-- LEFT SIDE -->
+      <div class="form-side">
+        <div class="form-container">
+          <h1>Welcome back</h1>
+          <p class="subtitle">Welcome back! Please enter your details.</p>
 
-  <div class="split">
+          <form method="POST" action="/login">
+            <label>Email</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
 
-    <!-- LEFT SIDE -->
-    <div class="form-side">
-      <div class="form-container">
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              placeholder="••••••••"
+              required
+            />
 
-        <h1>Welcome back</h1>
-        <p class="subtitle">
-          Welcome back! Please enter your details.
-        </p>
+            <div class="form-options">
+              <label class="checkbox">
+                <input type="checkbox" />
+                Remember for 30 days
+              </label>
 
-        <form>
+              <a href="#" class="forgot-pass1">Forgot password</a>
+            </div>
 
-          <label>Email</label>
-          <input type="email" placeholder="Enter your email">
+            <button type="submit" class="primary-btn">Sign in</button>
 
-          <label>Password</label>
-          <input type="password" placeholder="••••••••">
+            <button type="button" class="google-btn">
+              <img src="images/google-icon.jpg" alt="Google" />
+              Sign in with Google
+            </button>
+          </form>
 
-          <div class="form-options">
-            <label class="checkbox">
-              <input type="checkbox">
-              Remember for 30 days
-            </label>
-
-            <a href="#" class="forgot-pass1">Forgot password</a>
-          </div>
-
-          <button type="submit" class="primary-btn">
-            Sign in
-          </button>
-
-          <button type="button" class="google-btn">
-            <img src="images/google-icon.jpg" alt="Google">
-            Sign in with Google
-          </button>
-
-        </form>
-
-        <p class="signup-text">
-          Dont have an account?
-          <a href="#">Sign up</a>
-        </p>
-
+          <p class="signup-text">
+            Dont have an account?
+            <a href="#">Sign up</a>
+          </p>
+        </div>
       </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="image-side"></div>
     </div>
-
-    <!-- RIGHT SIDE -->
-    <div class="image-side"></div>
-
-  </div>
-
-</body>
+  </body>
 </html>
