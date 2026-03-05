@@ -4,7 +4,7 @@ const model = require("./model.js"); // Call the model.js file
 const app = express();
 const port = 3000;
 
-// Middleware setup
+// Middleware set up
 app.use(cors());
 app.use(express.json());
 
