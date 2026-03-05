@@ -26,6 +26,17 @@ async function setupDatabase() {
       );
     `);
 
+    // Prevent duplicate entries by creating a unique index on the name column
+    // VARCHAR is about how many characters will be stored in the column
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS users (
+        id SERIAL PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password VARCHAR(255) NOT NULL
+      );
+    `);
+
     // Check if the venues table is empty
     const checkData = await client.query("SELECT COUNT(*) FROM venues");
 
@@ -87,6 +98,22 @@ async function updateVenue(id, name, url, district) {
   return res.rows[0];
 }
 
+// Add user registration function
+async function registerUser(name, email, password) {
+  const res = await client.query(
+    "INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *",
+    [name, email, password],
+  );
+  return res.rows[0];
+}
+
+async function getUserByEmail(email) {
+  const res = await client.query("SELECT * FROM users WHERE email = $1", [
+    email,
+  ]);
+  return res.rows[0];
+}
+
 // Export functions for use in server.js
 module.exports = {
   setupDatabase,
@@ -94,4 +121,7 @@ module.exports = {
   addVenue,
   deleteVenue,
   updateVenue,
+
+  registerUser,
+  getUserByEmail,
 };
