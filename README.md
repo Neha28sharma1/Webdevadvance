@@ -1,22 +1,13 @@
 # Project Assignment
 
-
 # Web Development - Advanced Concepts TFWN19/TFWN14
 
 ## Test Admin account
 
-
 **[Admin Account]**
-
-- **User Name:** admin
 
 - **User Name:** admin@jkpgcity.se
 - **Password:** password
-
-**[Regular User Account]**
-
-- **User Name:** firstuser
-- **Password:** userpassword
 
 ## Completed requirements (Grade 3, 4, and 5)
 
@@ -45,6 +36,5 @@ docker run -d -p 5432:5432 --name my-postgres-container my-postgres-image
 log out button needs to be fixed
 duplicate code in index.html and nav.html
 Add a venue heading is visible if the user is not logged in
-
 
 - User registration & Log In & Admin account
