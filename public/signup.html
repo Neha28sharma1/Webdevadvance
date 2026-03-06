@@ -20,39 +20,31 @@
               Welcome! Please enter your details.
             </p>
     
-            <form>
+<form action="/signup" method="POST">
 
-                <label>Name</label>
-                <input type="name" placeholder="Enter your full name">
-    
-              <label>Email</label>
-              <input type="email" placeholder="Enter your email">
-    
-              <label>Password</label>
-              <input type="password" placeholder="">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Enter your name" required>
 
-              <label>Confirm Password</label>
-              <input type="confirm-password" placeholder="••••••••">
-    
-              <div class="form-options">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  Remember for 30 days
-                </label>
-    
-                <a href="#" class="forgot-pass">Forgot password</a>
-              </div>
-    
-              <button type="submit" class="primary-btn">
-                Sign in
-              </button>
-    
-              <button type="button" class="google-btn">
-                <img src="images/google-icon.jpg" alt="Google">
-                Sign in with Google
-              </button>
-           
-            </form>
+  <label>Email</label>
+  <input type="email" name="email" placeholder="Enter your email" required>
+
+  <label>Password</label>
+  <input type="password" name="password" placeholder="" required>
+
+  <label>Confirm Password</label>
+  <input type="password" name="confirmPassword" placeholder="••••••••" required>
+
+  <div class="form-options">
+    <label class="checkbox">
+      <input type="checkbox" name="remember">
+      Remember for 30 days
+    </label>
+  </div>
+
+  <button type="submit" class="primary-btn">
+    Sign up
+  </button>
+</form>
     
             <p class="signup-text">
               Already have an account?
