@@ -3,6 +3,8 @@ const cors = require("cors");
 const model = require("./model.js"); // Call the model.js file
 const app = express();
 const port = 3000;
+const path = require("path");
+const backend = __dirname; // Get the current directory of the backend folder
 
 //cookies management
 const cookieParser = require("cookie-parser");
@@ -16,7 +18,7 @@ app.use(cookieParser(SECRET));
 // Middleware setup
 app.use(cors());
 app.use(express.json());
-app.use("/", express.static("public")); // Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files from the "public" directory
 
 // Grade 3: REST API ROUTE
 app.get("/api/venues", async (req, res) => {
