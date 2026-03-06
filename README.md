@@ -35,3 +35,9 @@ docker ps -- to check if container is running
 docker build -t my-postgres-image .
 docker start my-postgres-container -- use this if container already exist
 docker run -d -p 5432:5432 --name my-postgres-container my-postgres-image
+
+## need to be fixed
+
+log out button needs to be fixed
+duplicate code in index.html and nav.html
+Add a venue heading is visible if the user is not logged in
