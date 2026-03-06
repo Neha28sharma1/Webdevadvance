@@ -3,10 +3,9 @@ const fs = require("fs");
 
 // Setup PostgreSQL client
 const client = new Client({
-  host: "localhost",
-  port: 5432,
+  host: "host.docker.internal", /// allows the backend container to connect to services running on the host machine
   user: "postgres",
-  password: "dasha",
+  password: "Neha",
   database: "postgres",
 });
 
