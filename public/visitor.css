@@ -1,0 +1,176 @@
+body{
+	background:#f8f8f8;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	}
+	
+	/* section */
+	.map-section{
+	padding:120px 0;
+	text-align:center;
+	}
+	
+	/* title */
+	.map-title{
+		font-size:44px;
+		font-weight:800;
+		line-height:1.05;
+		margin-bottom:40px;
+		text-align:center;
+		font-family:"Helvetica Neue", Arial, sans-serif;
+		color:#1d1f24;
+		}
+	
+	/* map container */
+	.map-wrapper{
+		position:relative;
+		width:450px;        /* controls the map size */
+		margin:80px auto;   /* centers it horizontally */
+		}
+	
+	/* map image */
+	.map-img{
+		width:100%;
+		height:auto;
+		display:block;
+		border-radius:12px;
+		}
+		
+	.map-layout{
+		display:flex;
+		justify-content:center;
+		align-items:flex-start;
+		gap:80px;
+		margin-top:40px;
+			}
+
+	.map-text{
+	max-width:800px;
+	margin:0 auto 60px auto;
+	font-size:15px;
+	line-height:1.7;
+	text-align:center;
+	color:#333;
+		}
+
+	/* svg position */
+	
+	svg{
+	width:120px;
+	height:auto;
+	
+	position:absolute;
+	top:50%;
+	left:40%;
+	
+	transform:translate(-50%,-50%);
+	}
+	
+	/* animation  */
+	svg .circles,
+	svg .pin{
+	transform-origin:center;
+	}
+	
+	/* initial pin position */
+	svg .pin{
+	opacity:0;
+	transform:translate(41px,0);
+	}
+	
+	/* circles */
+	.circle1,
+	.circle2,
+	.circle3{
+	transform-origin:center;
+	transform:scale(0.5);
+	opacity:0;
+	}
+	
+	/* circle animations */
+	svg .circle3{
+	animation:circlePin ease 1s 0.7s forwards,
+	circlePin2 ease 3s 4s infinite;
+	}
+	
+	svg .circle2{
+	animation:circlePin ease 1s 1s forwards,
+	circlePin2 ease 3s 4.3s infinite;
+	}
+	
+	svg .circle1{
+	animation:circlePin ease 1s 1.3s forwards,
+	circlePin2 ease 3s 4.6s infinite;
+	}
+	
+	/* pin animation */
+	
+	svg .pin{
+	animation:fadeDown ease 2s 1.6s forwards;
+	}
+	
+	/* animations */
+	@keyframes circlePin{
+	0%{
+	opacity:0;
+	transform:scale(0.5);
+	}
+	
+	100%{
+	opacity:1;
+	transform:scale(1);
+	}
+	}
+	
+	@keyframes circlePin2{
+	0%{
+	opacity:1;
+	transform:scale(1);
+	}
+	
+	50%{
+	opacity:0.4;
+	transform:scale(0.5);
+	}
+	
+	100%{
+	opacity:1;
+	transform:scale(1);
+	}
+	}
+	
+	@keyframes fadeDown{
+	0%{
+	opacity:0;
+	transform:translate(41px,0);
+	}
+	
+	100%{
+	opacity:1;
+	transform:translate(41px,8px);
+	}
+	}
+
+	
+/* district text */
+.districts{
+	max-width:350px;
+	text-align:left;
+	position:relative;
+	line-height:1.6;
+	}
+
+	.districts strong{
+		color:#156079;
+		}
+	.districts ul{
+		padding-left:20px;
+		}
+			
+	.districts li{
+	margin-bottom:14px;
+		}
+
+	.route-animation{
+			position:relative;
+			width:920px;   
+			}

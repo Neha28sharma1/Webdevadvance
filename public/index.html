@@ -9,6 +9,9 @@
       content="Welcome to JKPGCity — discover a small-town atmosphere..."
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="visitor.css" />
+<link rel="stylesheet" href="people.css" />
+<link rel="stylesheet" href="socialmedia.css" />
     <script src="navbar.js" defer></script>
   </head>
 
@@ -61,10 +64,11 @@
         <main class="content">
           <section class="intro">
             <div class="mini-copy">
-              <p>Where to eat</p>
-              <p>Whatever text</p>
+              <p>We want you to have a great stay in Jönköping so here are a few recommendations.</p>
+              <p>Make sure to check out our social media for current events and happenings.</p>
+              <p> Shoot us a DM if you have any questions!</p>  
             </div>
-
+             
             <h2>Emotions that<br />you’ll want to<br />share</h2>
 
             <p class="intro-text">
@@ -97,6 +101,157 @@
         </main>
       </div>
     </div>
+
+      <!-- Explore Jönköping City Districts Section -->
+    <section class="visit-section">
+
+      <h2 class="map-title">Explore Jönköping City Districts</h2>
+  
+      <p class="map-text">
+          Our city center consist of several districts. East Town, West Town, Spira, Match Town, the City Park, Jönköping Grand Station, Jönköping University and the Atoll. Discover our districts below!
+      </p>
+  
+      <link rel="stylesheet" href="visitor.css">
+  
+      <div class="map-layout">
+      
+      <div class="route-animation">
+       <img src="images/map-jkpg.jpg" class="map-img" alt="Map of Jönköping">
+  
+  
+  <svg class="marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125 125" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+          <path id="b" d="M21.9 0C10.44 0 .85 9.2.04 20.95a22.7 22.7 0 0 0 4.65 14.99l15.68 21.01a1.93 1.93 0 0 0 3.1 0l15.67-21.01a22.7 22.7 0 0 0 4.65-15C42.98 9.2 33.38 0 21.91 0zm0 27.02a7.36 7.36 0 1 1 7.33-7.33 7.35 7.35 0 0 1-7.32 7.36v-.03z"/>
+          <filter id="a" width="132%" height="124.3%" x="-16%" y="-8.7%" filterUnits="objectBoundingBox">
+              <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+              <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+              <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+          </filter>
+      </defs>
+      <g class="circles" fill="#EB1426" fill-opacity=".2" opacity=".7">
+          <g class="circle1"><circle cx="62.5" cy="62.5" r="62.5"/></g>
+          <g class="circle2"><circle cx="62.5" cy="62.5" r="47.5"/></g>
+          <g class="circle3"><circle cx="63" cy="63" r="31"/></g>
+      </g>
+      <g class="pin" fill-rule="nonzero">
+          <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+          <use fill="#EB1426" fill-rule="evenodd" xlink:href="#b"/>
+      </g>
+  </svg>
+  </div>
+  
+  <div class="districts">
+  
+  <h3>Our Districts</h3>
+  
+  <ul>
+  <li><strong>East Town (Öster)</strong> Popular shopping area with cafés and restaurants.</li>
+  <li><strong>West Town (Väster)</strong> Historic streets with boutiques and local shops.</li>
+  <li><strong>Spira</strong> Cultural center with theatre, concerts and events.</li>
+  <li><strong>Match Town</strong> Historic match industry district with museums.</li>
+  <li><strong>City Park</strong> Beautiful park with views over Jönköping.</li>
+  <li><strong>Jönköping Grand Station</strong>Main travel hub connecting trains and buses.</li>
+  <li><strong>Jönköping University</strong> International university campus.</li>
+  <li><strong>Atoll</strong> Modern waterfront district with restaurants and nightlife.</li>
+  </ul>
+  
+  </div>
+  
+  </div>
+  </div>
+  </section>
+
+  <!-- PEOPLE SECTION -->
+
+  <section class="people-section">
+   
+
+    <p class="community">Our community</p>
+    
+    <h1 class="title">YOU ARE JÖNKÖPING</h1>
+    
+    <p class="subtitle">
+    Students, families and generations shaping the spirit of the city.
+    A place where people grow, connect and belong.
+    </p>
+    
+    <a href="#social-media" class="discover-btn">FOLLOW US</a>
+    
+    <div class="people-wrapper">
+    
+    <div class="person students">
+    <img src="images/students1.jpg" alt="Students">
+    </div>
+    
+    <div class="person mother">
+    <img src="images/mother2.jpg" alt="Mother">
+    </div>
+    
+    <div class="person boy">
+    <img src="images/boy.jpg" alt="boy">
+    </div>
+    
+    <div class="person skating">
+    <img src="images/skating.jpg" alt="Skating">
+    </div>
+    
+    <div class="person woman">
+    <img src="images/woman.jpg" alt="Woman">
+    </div>
+    
+    <div class="person citysun">
+    <img src="images/citysun.jpg" alt="City sunset">
+    </div>
+    
+    <div class="person flower">
+    <img src="images/flower.jpg" alt="Flower crown">
+    </div>
+    
+    <div class="person bike">
+    <img src="images/bike.jpg" alt="Cycling">
+    </div>
+    
+    </div>
+    </section>
+
+
+    <script src="animation.js"></script>
+
+    <!-- SOCIAL MEDIA SECTION -->
+
+    <section id="social-media" class="social-section">
+
+  <p class="social-small">Stay connected</p>
+  
+  <h2 class="social-title">Follow JKPGCity</h2>
+  
+  <p class="social-text">
+  Discover events, hidden spots and daily life in Jönköping.
+  Follow us and be part of the community.
+  </p>
+  
+  <div class="social-icons">
+
+      <a href="#" class="social-link">
+      <img src="images/instagram.png" alt="Instagram">
+      </a>
+      
+      <a href="#" class="social-link">
+      <img src="images/facebook.png" alt="Facebook">
+      </a>
+      
+      <a href="#" class="social-link">
+      <img src="images/tiktok.png" alt="TikTok">
+      </a>
+      
+      <a href="#" class="social-link">
+      <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+
+      </div>
+      <div class="social-banner"></div>
+
+    </section>
     <!-- FOOTER -->
 <footer class="footer">
 
