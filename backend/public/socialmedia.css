@@ -1,0 +1,71 @@
+/* SOCIAL SECTION */
+
+.social-section{
+    background:#ffffff;
+    color:#0b0f1a;
+    text-align:center;
+
+    height:600px;          /* controls total section height */
+    padding-top:120px;
+    background-size: cover;
+    position:relative;
+    overflow:hidden;       /* prevents extra scrolling */
+    }
+    
+    .social-small{
+    color:#8a8f98;
+    font-size:14px;
+    margin-bottom:16px;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    }
+    
+    .social-title{
+    font-size:48px;
+    margin-bottom:20px;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    }
+    
+    .social-text{
+    max-width:500px;
+    margin:0 auto 40px auto;
+    color:#2b6f84;;
+    line-height:1.6;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    }
+    
+    /* social buttons */
+    
+    .social-links{
+    display:flex;
+    justify-content:center;
+    gap:29px;
+    flex-wrap:wrap;
+    }
+    
+    .social-btn{
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    color:black;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
+    }
+    
+   
+        .social-links img{
+        width:70px;
+        margin:10px;
+        }
+       
+        .social-banner{
+            height:420px;
+            background-image:url("images/media.jpeg");
+            background-size:cover;
+            background-position:center bottom;
+            margin-top:80px;
+            
+        }
+
+        html{
+            scroll-behavior:smooth;
+            }
