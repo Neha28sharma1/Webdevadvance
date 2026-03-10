@@ -15,11 +15,6 @@ const sessions = {};
 
 app.use(cookieParser(SECRET));
 
-// Middleware setup
-app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, "public"))); // Serve static files from the "public" directory
-
 // Grade 3: REST API ROUTE
 app.get("/api/venues", async (req, res) => {
   try {
@@ -32,6 +27,23 @@ app.get("/api/venues", async (req, res) => {
     res.status(500).json({ error: "Failed to retrieve venues data" });
   }
 });
+
+// Route to get all registered users
+app.get("/api/users", async (req, res) => {
+  console.log("Users endpoint was called");
+  try {
+    const users = await model.getAllUsers();
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to retrieve users" });
+  }
+});
+
+// Middleware setup
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files from the "public" directory
 
 //function to check if the user is logged in by checking the presence of the authToken cookie
 

@@ -3,7 +3,10 @@ const fs = require("fs");
 
 // Setup PostgreSQL client
 const client = new Client({
-  host: "host.docker.internal", /// allows the backend container to connect to services running on the host machine
+  // host: "host.docker.internal", /// allows the backend container to connect to services running on the host machine
+  host: "localhost",
+  port: 5432,
+
   user: "postgres",
   password: "Neha",
   database: "postgres",
@@ -71,6 +74,18 @@ async function getAllVenues() {
   }
 }
 
+// Get all registered users from the database
+async function getAllUsers() {
+  try {
+    const res = await client.query(
+      "SELECT id, name, email FROM users ORDER BY id ASC",
+    );
+    return res.rows;
+  } catch (err) {
+    console.error("User retrieval error", err.stack);
+    throw err;
+  }
+}
 /////////////functions to add, delete and update venues in the database/////////
 
 //to add a new venue to the database from frontend form
@@ -120,7 +135,7 @@ module.exports = {
   addVenue,
   deleteVenue,
   updateVenue,
-
+  getAllUsers,
   registerUser,
   getUserByEmail,
 };
