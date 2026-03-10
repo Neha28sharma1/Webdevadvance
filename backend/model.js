@@ -3,12 +3,10 @@ const fs = require("fs");
 
 // Setup PostgreSQL client
 const client = new Client({
-  // host: "host.docker.internal", /// allows the backend container to connect to services running on the host machine
-  host: "localhost",
+  host: "host.docker.internal", /// allows the backend container to connect to services running on the host machine
   port: 5432,
-
   user: "postgres",
-  password: "Neha",
+  password: "dasha",
   database: "postgres",
 });
 
@@ -16,7 +14,7 @@ const client = new Client({
 async function setupDatabase() {
   try {
     await client.connect();
-    console.log("Connected to PostgreSQL database");
+    await client.query(`DROP TABLE IF EXISTS venues;`);
 
     // Create venues table if it doesn't exist
     await client.query(`
@@ -24,7 +22,13 @@ async function setupDatabase() {
         id SERIAL PRIMARY KEY,
         name VARCHAR(255) NOT NULL,
         url VARCHAR(255),
-        district VARCHAR(100)
+        district VARCHAR(100),
+
+        -- Add more columns (grade 5 requirement)
+        
+        phone VARCHAR(20),
+        rating DECIMAL(2,1),
+        opening_hours VARCHAR(100)
       );
     `);
 
@@ -50,8 +54,16 @@ async function setupDatabase() {
 
       for (let store of stores) {
         await client.query(
-          "INSERT INTO venues (name, url, district) VALUES ($1, $2, $3)",
-          [store.name, store.url, store.district],
+          "INSERT INTO venues (name, url, district, phone, rating, opening_hours) VALUES ($1, $2, $3, $4, $5, $6)",
+          [
+            store.name,
+            store.url,
+            store.district,
+
+            store.phone,
+            store.rating,
+            store.opening_hours,
+          ],
         );
       }
       console.log("Success");
@@ -89,12 +101,11 @@ async function getAllUsers() {
 /////////////functions to add, delete and update venues in the database/////////
 
 //to add a new venue to the database from frontend form
-async function addVenue(name, url, district) {
+async function addVenue(name, url, district, phone, rating, opening_hours) {
   const res = await client.query(
-    "INSERT INTO venues (name, url, district) VALUES ($1,$2,$3) RETURNING *",
-    [name, url, district],
+    "INSERT INTO venues (name, url, district, phone, rating, opening_hours) VALUES ($1,$2,$3,$4,$5,$6) RETURNING *",
+    [name, url, district, phone, rating, opening_hours],
   );
-
   return res.rows[0];
 }
 
@@ -104,10 +115,18 @@ async function deleteVenue(id) {
 }
 
 //to update a venue in the database using the edit button on the frontend
-async function updateVenue(id, name, url, district) {
+async function updateVenue(
+  id,
+  name,
+  url,
+  district,
+  phone,
+  rating,
+  opening_hours,
+) {
   const res = await client.query(
-    "UPDATE venues SET name = $1, url = $2, district = $3 WHERE id = $4 RETURNING *",
-    [name, url, district, id],
+    "UPDATE venues SET name = $1, url = $2, district = $3, phone = $4, rating = $5, opening_hours = $6 WHERE id = $7 RETURNING *",
+    [name, url, district, phone, rating, opening_hours, id],
   );
   return res.rows[0];
 }

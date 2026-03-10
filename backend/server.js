@@ -90,9 +90,9 @@ app.get("/logout", (req, res) => {
 
 //to add a new venue to the database from frontend form and check auth as well before allowing the user to add a new venue
 app.post("/api/venues", checkAuth, async (req, res) => {
-  const { name, url, district } = req.body;
+  const { name, url, district, phone, rating, opening_hours } = req.body;
   try {
-    await model.addVenue(name, url, district);
+    await model.addVenue(name, url, district, phone, rating, opening_hours);
     res.status(201).json({ message: "Venue added successfully" });
   } catch (err) {
     res.status(500).json({ error: "Failed to add venue" });
@@ -113,20 +113,29 @@ app.delete("/api/venues/:id", checkAuth, async (req, res) => {
 //to update a venue in the database using the edit button on the frontend and check auth as well before allowing the user to update a venue
 app.put("/api/venues/:id", checkAuth, async (req, res) => {
   const venueId = req.params.id;
-  const { name, url, district } = req.body;
+  const { name, url, district, phone, rating, opening_hours } = req.body;
   try {
-    const updatedVenue = await model.updateVenue(venueId, name, url, district);
+    const updatedVenue = await model.updateVenue(
+      venueId,
+      name,
+      url,
+      district,
+      phone,
+      rating,
+      opening_hours,
+    );
     console.log("Updated result:", updatedVenue);
 
     res.status(200).json({ message: "Venue updated successfully" });
   } catch (err) {
+    console.error("PUT Error:", err);
     res.status(500).json({ error: "Failed to update venue" });
   }
 });
 
 // Before starting the server, set up the database and seed data (stores.json)
 model.setupDatabase().then(() => {
-  app.listen(port, () => {
+  app.listen(port, "0.0.0.0", () => {
     console.log(`Backend server is running on http://localhost:${port}`);
   });
 });

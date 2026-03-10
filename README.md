@@ -15,7 +15,6 @@
 - Add, Update, and Delete Venues (Requires Admin/Logged-in status)
 - Database integration with PostgreSQL
 - Docker containerization for Frontend and Backend
-- add more here
 
 # Docker Commands for frontend and backend:
 
