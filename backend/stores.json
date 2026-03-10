@@ -2,696 +2,1113 @@
   {
     "name": "Åhlens",
     "url": "ahlens.se/varuhus/jonkoping?utm_source=google&utm_medium=organic&utm_campaign=business_profile&utm_content=website_link",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 897298",
+    "rating": 3.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Akademibokhandeln",
     "url": "akademibokhandeln.se/butik/jonkoping-c",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 546555",
+    "rating": 3.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Apoteket AB",
     "url": "apoteket.se/apotek/apoteket-ostra-storgatan-jonkoping/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 608100",
+    "rating": 3.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Apotek Hjärtat",
     "url": "apotekhjartat.se/hitta-apotek-hjartat/jonkoping/apotek_hjartat_smedjegatan_2_jonkoping/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 693398",
+    "rating": 2.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Ashur Brud & Fest - Skrädderi",
     "url": "facebook.com/AshuraitaBrudFest/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 504118",
+    "rating": 2.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Asia livs, servicebutik",
     "url": "facebook.com/profile.php?id=100051215441977",
-    "district": null
+    "district": null,
+    "phone": "+46 36 790657",
+    "rating": 2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Ateljé Creativ i Jönköping/Finrummet",
     "url": "/finrummet.net",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 729511",
+    "rating": 2.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Ateljé KEG",
     "url": "ateljekeg.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 599070",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Atlantis Dive College",
     "url": "atlantis.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 291699",
+    "rating": 4.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Bagelle väskboutique",
     "url": null,
-    "district": null
+    "district": null,
+    "phone": "+46 36 441433",
+    "rating": 1.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Balance Ljud och Bild",
     "url": "balance.se",
-    "district": null
+    "district": null,
+    "phone": "+46 36 594061",
+    "rating": 4.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "BGA Fotocenter",
     "url": "bgafotocenter.se/jonkoping/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 287978",
+    "rating": 3.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Bikupan",
     "url": "bikupan.org",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 688667",
+    "rating": 3.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Blankdays",
     "url": "https://blankdays.com/collections/all-products?gclid=CjwKCAjwov6hBhBsEiwAvrvN6EZZ1PsnlSJhnE7bmxINtl0Y0noU3rvCybdt217CGd3-bqMdx3mYRxoCK5EQAvD_BwE",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 577607",
+    "rating": 2.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Boardlife",
     "url": "boardlife.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 677990",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Borgs skor",
     "url": "borgsskor.se/kontakt",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 130386",
+    "rating": 4.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Boutique Lykka",
     "url": "boutiquelykka.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 331805",
+    "rating": 3.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Broder Bläck",
     "url": "facebook.com/broderblacktatuering/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 401384",
+    "rating": 3.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Buketten",
     "url": "instagram.com/bukettenjonkoping/?hl=sv",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 115431",
+    "rating": 2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Busfrö Nytt & Bytt",
     "url": "busfro.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 949681",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Butiken Noga Utvalt",
     "url": "butikenjkpg.se",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 911938",
+    "rating": 2.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Carlings",
     "url": "carlings.com/sv/corporate/Butiker/sweden/58f/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 394236",
+    "rating": 1.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Casa Souk",
     "url": "casasouk.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 701633",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Cervera",
     "url": "cervera.se/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 449268",
+    "rating": 1.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Clas Ohlson",
     "url": "clasohlson.com/se/store-finder?q=J%C3%B6nk%C3%B6ping,%20City&latitude=57.78252&longitude=14.17347&source=search",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 379860",
+    "rating": 2.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Coop Atollen",
     "url": "coop.se/butiker-erbjudanden/coop/coop-atollen-jonkoping/",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 695966",
+    "rating": 3.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Coop Östra Torget",
     "url": "coop.se/butiker-erbjudanden/coop/coop-ostra-torget/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 220434",
+    "rating": 1.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Copenhagen Luxe",
     "url": "https://copenhagenluxe.dk/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 430380",
+    "rating": 4.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Day fotografi",
     "url": "dayfotografi.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 178929",
+    "rating": 4.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Dinos kemtvätt",
     "url": "dinos.nu",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 528414",
+    "rating": 3.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Din Sko",
     "url": "dinsko.se/stores",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 497620",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Direkt optik",
     "url": "https://www.direktoptik.se/butiker/jonkoping/ostra-storgatan-29/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 654295",
+    "rating": 4.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Dressman",
     "url": "dressmann.com/no/bedriftssider/finn-butikk/Sweden/Dressmann_Jonkoping/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 837687",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Elias Urmästare",
     "url": "facebook.com/profile.php?id=100064073112753",
-    "district": null
+    "district": null,
+    "phone": "+46 36 360625",
+    "rating": 4.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Engströms Urmakeri",
     "url": "engstromsurmakeri.se",
-    "district": null
+    "district": null,
+    "phone": "+46 36 460179",
+    "rating": 1.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Euroex",
     "url": null,
-    "district": null
+    "district": null,
+    "phone": "+46 36 580469",
+    "rating": 1.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Evoke industry",
     "url": null,
-    "district": null
+    "district": null,
+    "phone": "+46 36 248731",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Fabriken",
     "url": "butikfabriken.se",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 912699",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Fiction Prescription",
     "url": "https://www.instagram.com/fiction.prescription.jonkoping/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 570773",
+    "rating": 3.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Forex Bank Väster",
     "url": null,
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 862743",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Foten",
     "url": "https://www.foten.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 593024",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Friendly Corner",
     "url": "https://friendlycorner.se/butiken",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 822409",
+    "rating": 2.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Galleri 701 ramcenter",
     "url": "galleri701-ram.se",
-    "district": null
+    "district": null,
+    "phone": "+46 36 393980",
+    "rating": 4.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Gant",
     "url": "gant.se/stores?lat=57.78261370000001&long=14.1617876&postalCode=j%C3%B6nk%C3%B6ping&radius=10.0",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 752728",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Gåvan",
     "url": "gavanjonkoping.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 553628",
+    "rating": 3.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Gina Tricot",
     "url": "ginatricot.com/se/find-store",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 452114",
+    "rating": 2.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Go Banana",
     "url": "gobanana.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 311621",
+    "rating": 4.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Godis och Tobakshörnan",
     "url": null,
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 485555",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Golden athlete",
     "url": "goldenathlete.se/sv/butiker-2",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 214759",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Grmawit Store",
     "url": "grmawit.com/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 738722",
+    "rating": 1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Guldsmedjan Snarberg",
     "url": "guldsmedjan-snarberg.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 339055",
+    "rating": 1.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Hälsokraft",
     "url": "halsokraft.se/butiker?butik=503",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 536131",
+    "rating": 4.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Hemköp",
     "url": "hemkop.se/butik/4674",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 516107",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Hemmakväll",
     "url": "hemmakvall.se/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 767892",
+    "rating": 4.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Hemtex",
     "url": "hemtex.se/hitta-butik/jonkoping",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 671109",
+    "rating": 2.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Hi-fi Klubben",
     "url": "hifiklubben.se/hitta-butik/jonkoping/?gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH4w2ngSDzygBKQSqHVzCSFAplyrpByCMojT6dfo-Xnjcn7P9j_jBn8aAsD0EALw_wcB",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 925139",
+    "rating": 4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "H&M",
     "url": "hm.com/sv_se/customer-service/shoppa-pa-hm/store-locator",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 521276",
+    "rating": 1.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "H&M Home",
     "url": "hm.com/sv_se/customer-service/shoppa-pa-hm/store-locator",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 858123",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Indiska",
     "url": "indiska.com/se/butiker",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 599000",
+    "rating": 4.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Jeansshoppen",
     "url": "jeansshopen.se/sv/kontakt",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 295894",
+    "rating": 2.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "JL Sycenter",
     "url": "jlsycenter.se/kontakta-oss/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 440630",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Jönköpings antik och konsthandel",
     "url": null,
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 831382",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Jönköpings Cigrarrimport",
     "url": "atg.se/jonkopingscigarrimport",
-    "district": null
+    "district": null,
+    "phone": "+46 36 260404",
+    "rating": 2.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "KappAhl",
     "url": "www.kappahl.com/sv-SE/kundservice/kundservice/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 820592",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Karin Lund Design",
     "url": "facebook.com/karinlunddesign/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 990692",
+    "rating": 3.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Katrin Bååths Ateljé",
     "url": "https://katrinbaath.se/ateljen/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 472417",
+    "rating": 3.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Kicks",
     "url": "kicks.se/butiker/jonkoping-smedjegatan",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 365248",
+    "rating": 1.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Kjell & Company",
     "url": "kjell.com/se/butiker/sodra-strandgatan-5",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 249966",
+    "rating": 3.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Klädscoopet",
     "url": "facebook.com/Kladscoopet/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 418955",
+    "rating": 2.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "KOiJ Konsthantverk",
     "url": "koij.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 989894",
+    "rating": 4.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Kristina Brud & Fest",
     "url": "kristinabrud-fest.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 115442",
+    "rating": 3.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Kronans Apotek Atollen",
     "url": "apoteksinfo.nu/apotek/kronans_apotek_atollen_j%C3%B6nk%C3%B6ping-1415",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 137319",
+    "rating": 2.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Kvänum Kök",
     "url": "kvanum.com/se/showrooms/jonkoping/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 342065",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Lagerhaus",
     "url": "lagerhaus.se/stores",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 750579",
+    "rating": 1.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Lavér Studio",
     "url": "laverstudio.com/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 276947",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Life Naturlig Hälsa",
     "url": "https://www.lifebutiken.se/stores",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 351350",
+    "rating": 1.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Lilla Violen",
     "url": "lillaviolen.com/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 521651",
+    "rating": 2.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Lindex",
     "url": "lindex.com/se/hitta-din-butik?location=57.756066%2C14.188254&storeId=002&zoom=11",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 826302",
+    "rating": 3.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Livspotential Kroppsterapi",
     "url": "facebook.com/Livspotential/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 845695",
+    "rating": 1.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Lloyd Tabing Art Gallery",
     "url": "lloydtabingart.com/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 568328",
+    "rating": 4.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Macforum",
     "url": "macforum.se/butiker/forum-jonkoping",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 569363",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "MarQet",
     "url": "mq.se/butiker/?gclid=Cj0KCQjwteOaBhDuARIsADBqRejM-U3YQY9vh4F6gSXC2LnJWPVGKJ7CGfiCl1tYkREGUR37cTWMNcoaAjFGEALw_wcB",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 658047",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Mimosa City",
     "url": "mimosacity.se",
-    "district": null
+    "district": null,
+    "phone": "+46 36 483826",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Moderna Smycken",
     "url": "klockorochsmycken.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 139312",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Naturkompaniet",
     "url": "murphysbar.se/sv/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 605672",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Newhouse",
     "url": "newhouse.se/newhouse/vara-butiker",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 250180",
+    "rating": 3.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "New Yorker",
     "url": "newyorker.de/se/stores/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 280974",
+    "rating": 3.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Nilson Shoes",
     "url": "dinsko.se/stores",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 363568",
+    "rating": 3.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Noa Noa",
     "url": "httpsfacebook.com/Noa-Noa-J%C3%B6nk%C3%B6ping-446212958766553/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 333876",
+    "rating": 4.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Nordisk Möbelkonst",
     "url": "nordiskmobelkonst.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 649501",
+    "rating": 3.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Normal",
     "url": "normal.se/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 703016",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Nya Musik",
     "url": "nyamusik.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 395903",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Once for girls",
     "url": "oncestore.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 188686",
+    "rating": 3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Önska",
     "url": "onska.se/vara-butiker/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 209634",
+    "rating": 4.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Optiker Jahnke",
     "url": "jahnke.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 161799",
+    "rating": 1.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Optiker Ullström",
     "url": "optikerullstrom.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 725777",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Optik & Form",
     "url": "optikochform.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 783140",
+    "rating": 1.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Partyland",
     "url": "partyland.party/butiker/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 807512",
+    "rating": 3.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Planta Blommor",
     "url": "plantablommor.se/?gclid=Cj0KCQjwteOaBhDuARIsADBqRehsWXSRNHjeGnPn_AyambJZLmNntWxsMnUkANIHdme0NoDtc2Xi8mgaAicoEALw_wcB#.Y2p1tuzMLPZ",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 716866",
+    "rating": 1.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Pleasure erotic shop",
     "url": "pleasureeroticshop.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 795712",
+    "rating": 2.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "PMU Second Hand Jönköping City",
     "url": "pmu.se/stores/jonkopingcity/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 163976",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Pressbyrån Östra storgatan",
     "url": "pressbyran.se/kontakt/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 585119",
+    "rating": 1.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Pressbyrån Resecentrum",
     "url": "pressbyran.se/kontakt/hitta-butik/",
-    "district": "Resecentrum"
+    "district": "Resecentrum",
+    "phone": "+46 36 160747",
+    "rating": 1.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Pressbyrån Väster",
     "url": "pressbyran.se/kontakt/hitta-butik/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 400292",
+    "rating": 2.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Rabalder",
     "url": "publik.rabalder.se/butiker/joenkoeping.aspx",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 641471",
+    "rating": 4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Resehuset",
     "url": "resehuset.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 731715",
+    "rating": 4.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Rituals",
     "url": "rituals.com/sv-se/store-detail?store=J%C3%B6nk%C3%B6ping-%C3%96stra-Storgatan",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 949458",
+    "rating": 1.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Rizzo",
     "url": "rizzo.se/stores/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 826179",
+    "rating": 4.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Röda Korset Second Hand ",
     "url": "rodakorset.se/vad-vi-gor/second-hand/butiker/roda-korset-secondhand-jonkoping/?gclid=CjwKCAjwzY2bBhB6EiwAPpUpZvHzKjPuEJP8mzdhkuZYuEUoinVduEX8lEL6C0cnHq-JkG5o4XalYBoCwX8QAvD_BwE",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 812626",
+    "rating": 2.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Rundquist & Zälle",
     "url": "rundquist-zalle.com",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 481142",
+    "rating": 4.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Säfvers Tobak",
     "url": "facebook.com/people/S%C3%A4fvers-tobak/100049803762896/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 752051",
+    "rating": 4.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "SåIniNordeN",
     "url": "saininorden.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 723546",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Sandströms",
     "url": "sandstroms.nu/butiker/sandstroms-jonkoping",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 900293",
+    "rating": 4.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Sarabello",
     "url": "facebook.com/people/SARABELLO/100054240470073/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 807350",
+    "rating": 4.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Saumas sko & nyckelservice",
     "url": "saumasskoochnyckelservice.heymo.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 416717",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Sjöqvists skomakeri",
     "url": "sjoqvistskomakeri.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 925115",
+    "rating": 4.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Smålands Skinnmanufaktur",
     "url": "smalandsskinnmanufaktur.se/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "phone": "+46 36 119099",
+    "rating": 1.2,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Smarteyes",
     "url": "smarteyes.se/butiker/jonkoping",
-    "district": null
+    "district": null,
+    "phone": "+46 36 936622",
+    "rating": 4.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Smycka Guld",
     "url": "smycka.se/store/19",
-    "district": null
+    "district": null,
+    "phone": "+46 36 711973",
+    "rating": 4.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Smycket",
     "url": "smycketjonkoping.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 440785",
+    "rating": 2.6,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Specsavers",
     "url": "httpspecsavers.se/hitta-till-din-butik/jonkoping-city?utm_source=google&utm_medium=organic&utm_campaign=gmb-website&utm_content=jonkoping&y_source=1_NDA4Nzk2NjQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-    "district": null
+    "district": null,
+    "phone": "+46 36 943856",
+    "rating": 3.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Stagelight",
     "url": "stagelight.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 319105",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Stil",
     "url": "stilbutikerna.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 515852",
+    "rating": 4.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Story",
     "url": "storyjkpg.se",
-    "district": "Atollen"
+    "district": "Atollen",
+    "phone": "+46 36 634208",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "SunOff",
     "url": "sunoff.se/butiker/jonkoping?gclid=CjwKCAjw8JKbBhBYEiwAs3sxNy3EnUFGceeFxyJN35fymdpsg5qEWUTPj6Sx0TbNoLdwp8E6AI-I5xoC45gQAvD_BwE",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 503778",
+    "rating": 4.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Synoptik",
     "url": "httpsynoptik.se/butiker/jonkoping/jonkoping-ostra-storgatan5?utm_campaign=gmb-website&utm_source=google&utm_medium=organic&utm_content=667-Jonkoping-Ostra-Storgatan-5",
-    "district": null
+    "district": null,
+    "phone": "+46 36 308313",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Synsam Jönköping Öster",
     "url": "synsam.se/optiker/synsam-j%C3%B6nk%C3%B6ping-%C3%B6ster/128",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 967759",
+    "rating": 1.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Synsam Jönköping Väster",
     "url": "synsam.se/optiker/synsam-j%C3%B6nk%C3%B6ping-v%C3%A4ster/125",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 135490",
+    "rating": 1.5,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Systembolaget",
     "url": "systembolaget.se/butiker-ombud/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 794982",
+    "rating": 2.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "The Body Shop",
     "url": "thebodyshop.com/sv-se/store-details/jonkoping-smedjegatan/3801?utm_source=google&utm_medium=organic-local&utm_campaign=yext&utm_content=3801",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 375991",
+    "rating": 2.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Ticket",
     "url": "ticket.se/resebutiker/jonkoping.html",
-    "district": null
+    "district": null,
+    "phone": "+46 36 374829",
+    "rating": 4.1,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Twilfit",
     "url": "shop.change.com/sv-SE",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 558580",
+    "rating": 2.3,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Ur & Penn",
     "url": "uropenn.se/hitta-butik/",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 662894",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Västanhem Butik",
     "url": "vastanhem.se",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 354908",
+    "rating": 3.4,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Västra klackbaren",
     "url": null,
-    "district": null
+    "district": null,
+    "phone": "+46 36 152129",
+    "rating": 2.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Vätterbygden Ankarbergs Begravningsbyrå",
     "url": "ankarbergs.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 711278",
+    "rating": 2.9,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Vätterfisk",
     "url": "xn--vtterfisk-v2a.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "phone": "+46 36 520657",
+    "rating": 3.7,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Yxhage Lås och Larm",
     "url": "yxhage.se/",
-    "district": null
+    "district": null,
+    "phone": "+46 36 690909",
+    "rating": 1.8,
+    "opening_hours": "09:00 - 18:00"
   },
   {
     "name": "Zephyr Tattoo Parlour",
     "url": "zephyrtattoo.se",
-    "district": "Öster"
+    "district": "Öster",
+    "phone": "+46 36 385322",
+    "rating": 4.9,
+    "opening_hours": "09:00 - 18:00"
   }
 ]

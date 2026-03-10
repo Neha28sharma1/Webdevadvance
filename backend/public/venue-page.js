@@ -39,6 +39,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         name: document.getElementById("name").value,
         url: document.getElementById("url").value,
         district: document.getElementById("district").value,
+
+        phone: document.getElementById("phone").value,
+        rating: document.getElementById("rating").value,
+        opening_hours: document.getElementById("opening_hours").value,
       };
 
       await fetch("http://localhost:3000/api/venues", {
@@ -67,7 +71,22 @@ document.addEventListener("DOMContentLoaded", async () => {
            <a href="https://${store.url}" target="_blank" style="color: inherit; text-decoration: underline;">Visit the website</a>
          </div>`
         : "";
+      const extraInfoHTML = `
+        <div class="info-row">
+          <i class="fa-solid fa-star" style="color: gold;"></i>
+          <span>${store.rating ? store.rating : "N/A"}</span>
+        </div>
+        <div class="info-row">
+          <i class="fa-solid fa-phone"></i>
+          <span>${store.phone ? store.phone : "No phone number"}</span>
+        </div>
+        <div class="info-row">
+          <i class="fa-solid fa-clock"></i>
+          <span>${store.opening_hours ? store.opening_hours : "No hours available"}</span>
+        </div>
+      `;
 
+      // Add edit and delete buttons for admin users, which call the respective functions with the venue's ID and current details
       const cardHTML = `
       <div class="venue-card" data-category="${districtName}">
         <div class="card-image" style="background-image: url('${cardImageUrl}');">
@@ -85,13 +104,13 @@ document.addEventListener("DOMContentLoaded", async () => {
           </div>
 
           ${websiteHTML}
+          ${extraInfoHTML}
 
           ${
-            // If the user is an admin, show the edit and delete buttons on each card
             isAdmin
               ? `
           <div class="card-actions">
-            <button onclick="editVenue(${store.id}, '${store.name}', '${store.url}', '${store.district}')">
+            <button onclick="editVenue(${store.id}, '${store.name}', '${store.url}', '${store.district}', '${store.phone || ""}', '${store.rating || ""}', '${store.opening_hours || ""}')">
               Edit
             </button>
             <button onclick="deleteVenue(${store.id})">
@@ -171,9 +190,18 @@ async function editVenue(id, name, url, district) {
   const newUrl = prompt("Edit website:", url);
   const newDistrict = prompt("Edit district:", district);
 
+  const newPhone = prompt("Edit phone number:", phone);
+  const newRating = prompt("Edit rating (e.g., 4.5):", rating);
+  const newHours = prompt("Edit opening hours:", opening_hours);
+
   if (!newName) return;
 
-  await fetch(`http://localhost:3000/api/venues/${id}`, {
+  const finalRating =
+    newRating === "" || newRating === "N/A" || isNaN(newRating)
+      ? null
+      : parseFloat(newRating);
+
+  const response = await fetch(`http://localhost:3000/api/venues/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -182,7 +210,17 @@ async function editVenue(id, name, url, district) {
       name: newName,
       url: newUrl,
       district: newDistrict,
+      phone: newPhone,
+      rating: finalRating,
+      opening_hours: newHours,
     }),
   });
-  location.reload();
+
+  // If the update is successful, reload the page to show the updated venue information.
+  // If it fails, show an alert to the user.
+  if (response.ok) {
+    location.reload();
+  } else {
+    alert("Failed to update venue. Please try again.");
+  }
 }
